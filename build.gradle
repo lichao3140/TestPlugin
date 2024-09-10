@@ -1,0 +1,39 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            allowInsecureProtocol = true
+            url "http://maven.geelib.360.cn/nexus/repository/replugin/"
+        }
+    }
+    dependencies {
+        // 正确添加类路径依赖
+        classpath 'com.qihoo360.replugin:replugin-plugin-gradle:3.1.0'
+    }
+}
+
+plugins {
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.kotlin.android) apply false
+}
+
+allprojects {
+    // 在所有项目中应用插件
+    apply plugin: 'replugin-plugin-gradle'
+}
+
+subprojects {
+    // 应用插件，并配置插件
+    apply plugin: 'replugin-plugin-gradle'
+
+    repluginPluginConfig {
+        // 插件名
+        pluginName = "w98217"
+        // 宿主app的包名
+        hostApplicationId = "com.hjl.androidtcu"
+        // 宿主app的启动activity
+        hostAppLauncherActivity = "com.hjl.androidtcu.ui.activity.SplashActivity"
+    }
+}
