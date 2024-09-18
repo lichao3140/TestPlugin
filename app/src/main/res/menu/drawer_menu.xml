@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_bms"
+        android:title="BMS"/>
+    <item
+        android:id="@+id/nav_alarm"
+        android:title="Alarm" />
+    <item
+        android:id="@+id/nav_alarm_record"
+        android:title="AlarmRecord" />
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/nav_charge"
+        android:title="Charge"/>
+    <item
+        android:id="@+id/nav_air"
+        android:title="Air"/>
+</menu>

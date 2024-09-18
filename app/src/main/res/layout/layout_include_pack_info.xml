@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvBmsStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_bms_chang_status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvSystStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_battery_nominal_capacity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvBmsStatus"
+                app:layout_constraintTop_toBottomOf="@+id/tvBmsStatus" />
+
+
+            <TextView
+                android:id="@+id/tvCurSoc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_soc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvSystStatus"
+                app:layout_constraintTop_toBottomOf="@+id/tvSystStatus" />
+
+
+            <TextView
+                android:id="@+id/tvCurSoc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_soh"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvCurSoc1"
+                app:layout_constraintTop_toBottomOf="@+id/tvCurSoc1" />
+
+
+            <TextView
+                android:id="@+id/tvBatChargePow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_bat_max_chg_power"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvCurSoc2"
+                app:layout_constraintTop_toBottomOf="@+id/tvCurSoc2" />
+
+
+            <TextView
+                android:id="@+id/tvCuVoltage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_total_vol"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvBatChargePow"
+                app:layout_constraintTop_toBottomOf="@+id/tvBatChargePow" />
+
+            <TextView
+                android:id="@+id/tvCuPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_total_cur"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvCuVoltage"
+                app:layout_constraintTop_toBottomOf="@+id/tvCuVoltage" />
+
+            <TextView
+                android:id="@+id/tvTotalPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_total_power"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvCuPower"
+                app:layout_constraintTop_toBottomOf="@+id/tvCuPower" />
+
+            <TextView
+                android:id="@+id/tvDispow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_min_dis_pow"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvTotalPower"
+                app:layout_constraintTop_toBottomOf="@+id/tvTotalPower" />
+
+
+            <TextView
+                android:id="@+id/tvChargeStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_connect_status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_red"
+                app:layout_constraintStart_toStartOf="@+id/guideline8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvChargePow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_Pow"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvChargeStatus"
+                app:layout_constraintTop_toBottomOf="@+id/tvChargeStatus" />
+
+            <TextView
+                android:id="@+id/tvChargeOutV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charging_mode_out_v"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvChargePow"
+                app:layout_constraintTop_toBottomOf="@+id/tvChargePow" />
+
+            <TextView
+                android:id="@+id/tvChargeOutC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charging_mode_out_c"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvChargeOutV"
+                app:layout_constraintTop_toBottomOf="@+id/tvChargeOutV" />
+
+            <TextView
+                android:id="@+id/tvChargeOutP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charging_mode_out_p"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvChargeOutC"
+                app:layout_constraintTop_toBottomOf="@+id/tvChargeOutC" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_bms_battery_alarm_info"
+                android:textColor="@color/color_07c160"
+                android:textSize="@dimen/sp_28"
+                app:drawableStartCompat="@drawable/svg_battery"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="@dimen/dp_2"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline45"
+                app:layout_constraintTop_toTopOf="@+id/tvChgModePfc" />
+
+            <TextView
+                android:id="@+id/tvChgModePfc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_mode_pfc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                app:layout_constraintStart_toStartOf="@+id/textView53"
+                app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+            <TextView
+                android:id="@+id/tvChgInVOver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_in_v_over"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                app:layout_constraintStart_toStartOf="@+id/tvChgModePfc"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgModePfc" />
+
+            <TextView
+                android:id="@+id/tvChgInVUnder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_in_v_under"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                app:layout_constraintStart_toStartOf="@+id/tvChgInVOver"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgInVOver" />
+
+            <TextView
+                android:id="@+id/tvChgPhaseImbalance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_phase_imbalance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                app:layout_constraintStart_toStartOf="@+id/tvChgInVUnder"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgInVUnder" />
+
+            <TextView
+                android:id="@+id/tvChgPhaseLoss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_phase_loss"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                app:layout_constraintStart_toStartOf="@+id/tvChgPhaseImbalance"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgPhaseImbalance" />
+
+            <TextView
+                android:id="@+id/tvChgUnevenCur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_uneven_current"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                app:layout_constraintStart_toStartOf="@+id/tvChgPhaseLoss"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgPhaseLoss" />
+
+            <TextView
+                android:id="@+id/tvChgIdDuplicates"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_id_duplicates"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                app:layout_constraintStart_toStartOf="@+id/tvChgUnevenCur"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgUnevenCur" />
+
+            <TextView
+                android:id="@+id/tvChgPowerLimit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_power_limit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                app:layout_constraintStart_toStartOf="@+id/tvChgIdDuplicates"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgIdDuplicates" />
+
+            <TextView
+                android:id="@+id/tvChgCommInterrupted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_com_interrupted"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                app:layout_constraintStart_toStartOf="@+id/tvChgPowerLimit"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgPowerLimit" />
+
+            <TextView
+                android:id="@+id/tvSwitchSmokeDetector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_switch_smoke_detector_0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvChgCommInterrupted"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgCommInterrupted" />
+
+            <TextView
+                android:id="@+id/tvSwitchWaterImmersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_switch_water_immersion_0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvSwitchSmokeDetector"
+                app:layout_constraintTop_toBottomOf="@+id/tvSwitchSmokeDetector" />
+
+            <TextView
+                android:id="@+id/tvSwitchFireFighting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_switch_fire_fighting_0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvSwitchWaterImmersion"
+                app:layout_constraintTop_toBottomOf="@+id/tvSwitchWaterImmersion" />
+
+            <TextView
+                android:id="@+id/tvChgWalkIn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_walk_in"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintBottom_toBottomOf="@+id/tvChgModePfc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline45"
+                app:layout_constraintTop_toTopOf="@+id/tvChgModePfc" />
+
+            <TextView
+                android:id="@+id/tvChgOutputOver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_output_over"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvChgWalkIn"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgWalkIn" />
+
+            <TextView
+                android:id="@+id/tvChgTempOver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_temp_over"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvChgOutputOver"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgOutputOver" />
+
+            <TextView
+                android:id="@+id/tvChgFunFault"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_fun_fault"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvChgTempOver"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgTempOver" />
+
+            <TextView
+                android:id="@+id/tvChgProtectionFault"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_protection_fault"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvChgFunFault"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgFunFault" />
+
+            <TextView
+                android:id="@+id/tvChgMdFault"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_md_fault"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvChgProtectionFault"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgProtectionFault" />
+
+            <TextView
+                android:id="@+id/tvChgDcDown"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_dc_down"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvChgMdFault"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgMdFault" />
+
+            <TextView
+                android:id="@+id/tvChgMdSleep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_md_sleep"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvChgDcDown"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgDcDown" />
+
+            <TextView
+                android:id="@+id/tvChgOutShort"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/text_alarm_charge_out_short"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:drawableEndCompat="@drawable/shape_bg_oval_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvChgMdSleep"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgMdSleep" />
+
+            <TextView
+                android:id="@+id/tvSwitchDoorStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_switch_door_status_0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvChgOutShort"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgOutShort" />
+
+            <TextView
+                android:id="@+id/tvSwitchAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_switch_ac_connect_0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvSwitchDoorStatus"
+                app:layout_constraintTop_toBottomOf="@+id/tvSwitchDoorStatus" />
+
+            <TextView
+                android:id="@+id/tvSwitchDC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_switch_dc_connect_0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvSwitchAC"
+                app:layout_constraintTop_toBottomOf="@+id/tvSwitchAC" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 边框层 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/> <!-- 内部透明 -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/color_07c160"/> <!-- 边框颜色和宽度 -->
+        </shape>
+    </item>
+</layer-list>

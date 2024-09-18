@@ -1,0 +1,143 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/include_battery_temp_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_bms_battery_temp_single_info"
+                android:textColor="@color/color_07c160"
+                android:textSize="@dimen/sp_28"
+                app:drawableStartCompat="@drawable/svg_battery"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvMaxVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_max_cell_vol"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/textView40"
+                app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+            <TextView
+                android:id="@+id/tvMinVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_min_cell_vol"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvMaxVol"
+                app:layout_constraintTop_toBottomOf="@+id/tvMaxVol"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/tvMaxTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_max_temp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvMinVol"
+                app:layout_constraintTop_toBottomOf="@+id/tvMinVol" />
+
+            <TextView
+                android:id="@+id/tvMinTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_min_temp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvMaxTemp"
+                app:layout_constraintTop_toBottomOf="@+id/tvMaxTemp" />
+
+
+            <TextView
+                android:id="@+id/tvMaxTempDiff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_max_temp_diff"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvMinTemp"
+                app:layout_constraintTop_toBottomOf="@+id/tvMinTemp" />
+
+            <TextView
+                android:id="@+id/tvMaxVolDiff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/move_text_max_cell_vol_diff"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/guideline9"
+                app:layout_constraintTop_toTopOf="@+id/tvMaxVol" />
+
+
+            <TextView
+                android:id="@+id/tvBatHvpTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_bat_hvp_Temp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvMaxVolDiff"
+                app:layout_constraintTop_toBottomOf="@+id/tvMaxVolDiff" />
+
+
+            <TextView
+                android:id="@+id/tvCurDiff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_rack_cur_diff"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvBatHvpTemp"
+                app:layout_constraintTop_toBottomOf="@+id/tvBatHvpTemp" />
+
+            <TextView
+                android:id="@+id/tvRackVolDiff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/move_text_rack_vol_diff"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvCurDiff"
+                app:layout_constraintTop_toBottomOf="@+id/tvCurDiff" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -66,16 +66,49 @@ dependencies {
 
     // 插件模块
     implementation "com.qihoo360.replugin:replugin-plugin-lib:3.1.0"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'me.xuexuan:fragmentationx:1.0.6'
+    // rxjava
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.7'
+    // 日志
+    implementation 'com.orhanobut:logger:2.2.0'
+    // 工具类 https://blankj.com/2016/07/31/android-utils-code/
+    implementation 'com.blankj:utilcodex:1.31.1'
+    // 权限
+    implementation 'com.github.getActivity:XXPermissions:18.5'
+    // titleBar
+    implementation 'com.github.getActivity:TitleBar:10.5'
+    // toasty相关
+    implementation 'com.github.getActivity:Toaster:12.3'
+    // GSON
+    implementation 'com.google.code.gson:gson:2.10.1'
+    // MMKV
+    implementation 'com.tencent:mmkv-static:1.3.9'
+    // 对话框 https://www.jianshu.com/p/8efda6632f3e
+    implementation 'com.github.li-xiaojun:XPopup:2.9.19'
+    implementation 'com.airbnb.android:lottie:6.4.1'
+    // 沉浸式框架：https://github.com/gyf-dev/ImmersionBar
+    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
+    implementation 'com.geyifeng.immersionbar:immersionbar-ktx:3.2.2'
+    // 自适应屏幕
+    implementation 'me.jessyan:autosize:1.2.1'
+    implementation 'lib.kingja.switchbutton:switchbutton:1.1.8'
+    implementation project(':library:jsbridgekt')
 }
 
 // 这个plugin需要放在android配置之后，因为需要读取android中的配置项
-//apply plugin: 'replugin-plugin-gradle'
-//
-//repluginPluginConfig {
-//    //插件名
-//    pluginName = "w98217"
-//    //宿主app的包名
-//    hostApplicationId = "com.hjl.androidtcu"
-//    //宿主app的启动activity
-//    hostAppLauncherActivity = "com.hjl.androidtcu.ui.activity.SplashActivity"
-//}
+subprojects {
+    // 应用插件，并配置插件
+    apply plugin: 'replugin-plugin-gradle'
+
+    repluginPluginConfig {
+        // 插件名
+        pluginName = "w98217"
+        // 宿主app的包名
+        hostApplicationId = "com.hjl.androidtcu"
+        // 宿主app的启动activity
+        hostAppLauncherActivity = "com.hjl.androidtcu.ui.activity.SplashActivity"
+    }
+}

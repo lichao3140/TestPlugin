@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/include_battery_single_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_battery_charge_info"
+                android:textColor="@color/color_07c160"
+                android:textSize="@dimen/sp_28"
+                app:drawableStartCompat="@drawable/svg_battery"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvChgType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_chg_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/textView53"
+                app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+            <TextView
+                android:id="@+id/tvDCVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_dc_vol"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvChgType"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgType" />
+
+            <TextView
+                android:id="@+id/tvDCCur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_dc_cur"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvDCVol"
+                app:layout_constraintTop_toBottomOf="@+id/tvDCVol" />
+
+            <TextView
+                android:id="@+id/tvACVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_ac_vol"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvDCCur"
+                app:layout_constraintTop_toBottomOf="@+id/tvDCCur" />
+
+            <TextView
+                android:id="@+id/tvACCur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_ac_cur"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvACVol"
+                app:layout_constraintTop_toBottomOf="@+id/tvACVol" />
+
+            <TextView
+                android:id="@+id/tvASKVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_ask_vol"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvACCur"
+                app:layout_constraintTop_toBottomOf="@+id/tvACCur" />
+
+            <TextView
+                android:id="@+id/tvASKCur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_asl_cur"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvASKVol"
+                app:layout_constraintTop_toBottomOf="@+id/tvASKVol" />
+
+            <TextView
+                android:id="@+id/tvSoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_soc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvASKCur"
+                app:layout_constraintTop_toBottomOf="@+id/tvASKCur" />
+
+            <TextView
+                android:id="@+id/tvCabTemp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_temp_1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvSoc"
+                app:layout_constraintTop_toBottomOf="@+id/tvSoc" />
+
+            <TextView
+                android:id="@+id/tvCabTemp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_temp_2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvCabTemp1"
+                app:layout_constraintTop_toBottomOf="@+id/tvCabTemp1" />
+
+            <TextView
+                android:id="@+id/tvStopReason"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_charge_stop_reason"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/tvCabTemp2"
+                app:layout_constraintTop_toBottomOf="@+id/tvCabTemp2" />
+
+            <TextView
+                android:id="@+id/tvGunStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_bms_charge_gun_status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintBottom_toBottomOf="@+id/tvChgType"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="@+id/tvChgType" />
+
+            <TextView
+                android:id="@+id/tvGunTemp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_gun_temp_1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvGunStatus"
+                app:layout_constraintTop_toBottomOf="@+id/tvGunStatus" />
+
+            <TextView
+                android:id="@+id/tvGunTemp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_gun_temp_2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvGunTemp1"
+                app:layout_constraintTop_toBottomOf="@+id/tvGunTemp1" />
+
+            <TextView
+                android:id="@+id/tvGunCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_gun_cc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvGunTemp2"
+                app:layout_constraintTop_toBottomOf="@+id/tvGunTemp2" />
+
+            <TextView
+                android:id="@+id/tvGunCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_gun_cp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvGunCC"
+                app:layout_constraintTop_toBottomOf="@+id/tvGunCC" />
+
+            <TextView
+                android:id="@+id/tvGunCPFre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_gun_cp_fre"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvGunCP"
+                app:layout_constraintTop_toBottomOf="@+id/tvGunCP" />
+
+            <TextView
+                android:id="@+id/tvGunCPDuty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_gun_cp_duty"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvGunCPFre"
+                app:layout_constraintTop_toBottomOf="@+id/tvGunCPFre" />
+
+            <TextView
+                android:id="@+id/tvChgTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_gun_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvGunCPDuty"
+                app:layout_constraintTop_toBottomOf="@+id/tvGunCPDuty" />
+
+            <TextView
+                android:id="@+id/tvChgPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_gun_power"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvChgKwh"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgKwh" />
+
+            <TextView
+                android:id="@+id/tvChgKwh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_bms_charge_gun_kwh"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintStart_toStartOf="@+id/tvChgTime"
+                app:layout_constraintTop_toBottomOf="@+id/tvChgTime" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

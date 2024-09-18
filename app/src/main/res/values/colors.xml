@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#203040</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +8,311 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="title_143D97">#143D97</color>
+    <color name="home_143D97">#27AC2F</color>
+    <color name="home_1C90FD">#1C90FD</color>
+    <color name="home_16B493">#16B493</color>
+    <color name="home_F43441">#F43441</color>
+    <color name="home_817F80">#817F80</color>
+    <color name="background_E8F1F0">#E8F1F0</color>
+    <color name="text_0c0b11">#0c0b11</color>
+    <color name="text_66BAE6">#66BAE6</color>
+    <color name="text_1C90FD">#1C90FD</color>
+    <color name="text_6C9249">#6C9249</color>
+    <color name="text_2D4281">#2D4281</color>
+    <color name="text_529987">#529987</color>
+    <color name="text_BB3347">#BB3347</color>
+    <color name="text_52525A">#52525A</color>
+    <color name="home_line">#C0C0C0</color>
+
+    <!-- 红色 -->
+    <color name="red">#FF0000</color>
+    <!-- 灰色 -->
+    <color name="gray">#C0C0C0</color>
+    <!-- 品蓝 -->
+    <color name="velvet">#4169E1</color>
+    <!-- 桔黄 -->
+    <color name="orange">#FF8000</color>
+    <!-- 黄褐色 -->
+    <color name="tan">#F0E68C</color>
+    <!-- 橙红色 -->
+    <color name="orange_red">#FA8072</color>
+    <!-- 天蓝 -->
+    <color name="sky_blue">#87CEEB</color>
+    <!-- 浅灰蓝色 -->
+    <color name="light_grey_blue">#B0E0E6</color>
+    <!-- 绿色 -->
+    <color name="green">#008000</color>
+    <color name="color_07c160">#07C160</color>
+    <color name="color_bio_main">#61b2fb</color>
+    <color name="color_e96400">#E96400</color>
+    <color name="color_text_bms_bg">#3C3E4D</color>
+    <color name="color_text_bms">#6FB4BB</color>
+
+    <color name="alert_background_color">#F2F2F2</color>
+    <!-- 告警提示框分割线颜色 -->
+    <color name="alert_buttonLine_color">#cbcbcb</color>
+    <!-- 告警提示框Button文本颜色【取消，左边】 -->
+    <color name="alert_buttonText_color_cancel">#8B8B8B</color>
+    <!-- 告警提示框Button文本颜色【删除，右边】 -->
+    <color name="alert_buttonText_color_highlighted">#e83e36</color>
+    <!-- 告警提示框Button文本颜色【确认，右边】 -->
+    <color name="alert_buttonText_color_sure">#5799ef</color>
+    <!-- 告警提示框Message文本颜色 -->
+    <color name="alert_messageText_color">#8B8B8B</color>
+    <!-- 告警提示框SubMessage文本颜色 -->
+    <color name="alert_subMessageText_color">#998B8B8B</color>
+    <!-- 告警提示框Title文本颜色 -->
+    <color name="alert_titleText_color">#757575</color>
+    <!-- 超链接文本颜色 -->
+    <color name="links_text_color_blue">#5799ef</color>
+    <!-- 超链接文本颜色灰色 -->
+    <color name="links_text_color_gray">#8b8b8b</color>
+    <!-- 列表分组Title文本颜色 -->
+    <color name="listGroup_titleText_color">#8b8b8b</color>
+    <!-- 列表Item的背景色 -->
+    <color name="listItem_background_color">#2c2c2c</color>
+    <!-- 列表Item的Content文本颜色（可点击） -->
+    <color name="listItem_contenteText_color_normal">#5799ef</color>
+    <!-- 列表Item的Content文本颜色（不可点击） -->
+    <color name="listItem_contenteText_color_unable">#8b8b8b</color>
+    <!-- 列表分割线颜色 -->
+    <color name="listItem_line_color">#222222</color>
+    <!-- 列表Item的SubTitle文本颜色 -->
+    <color name="listItem_subTitleText_color">#8b8b8b</color>
+    <!-- 列表Item的Title文本颜色 -->
+    <color name="listItem_titleText_color">#D8D8D8</color>
+    <!-- 首页侧边栏item分割线 -->
+    <color name="menu_item_line_color">#80cbcbcb</color>
+    <!-- 首页侧边栏item字体颜色 -->
+    <color name="menu_item_text_color">#fafafa</color>
+    <!-- 首页侧边栏item选中颜色 -->
+    <color name="menu_item_text_color_selected">#4dcbcbcb</color>
+    <!-- 信息提示视图背景颜色 -->
+    <color name="messageTip_background_color">#E5552B</color>
+    <!-- 信息提示视图文本颜色 -->
+    <color name="messageTip_text_color">#FAFAFA</color>
+    <!-- 导航栏背景 -->
+    <color name="navigation_background_color">#222222</color>
+    <!-- 导航栏leftTitle文本颜色 -->
+    <color name="navigation_leftTitileText_color">#5799ef</color>
+    <!-- 导航栏rightTitle文本颜色 -->
+    <color name="navigation_rightTtitileText_color">#5799ef</color>
+    <!-- 导航栏title文本颜色 -->
+    <color name="navigation_titileText_color">#FAFAFA</color>
+    <!-- Tab背景颜色 -->
+    <color name="tabBar_background_color">#222222</color>
+    <!-- Tab背景投影颜色 -->
+    <color name="tabBar_background_color_shadow">#80000000</color>
+    <!-- Tab文本高亮颜色 -->
+    <color name="tabBar_text_color_highlighted">#5799ef</color>
+    <!-- Tab文本颜色 -->
+    <color name="tabBar_text_color_normal">#8b8b8b</color>
+    <!-- 输入框背景颜色 -->
+    <color name="textField_background_color">#2c2c2c</color>
+    <!-- 输入框背景投影颜色 -->
+    <color name="textField_background_color_shadow">#80000000</color>
+    <!-- 输入框提示文本颜色 -->
+    <color name="textField_placeholderText_color">#8b8b8b</color>
+    <!-- 输入框文本颜色 -->
+    <color name="textField_text_color">#D8D8D8</color>
+    <!-- 视图描述文本颜色 -->
+    <color name="view_descTitleText_color">#D8D8D8</color>
+    <!-- 视图Title文本颜色 -->
+    <color name="view_titleText_color">#5799ef</color>
+    <!-- 功能块的背景色 -->
+    <color name="viewCard_background_color">#2c2c2c</color>
+
+
+    <!-- 功能子块的title颜色_选中 -->
+    <color name="viewCardSub_titleText_color_selected">#FAFAFA</color>
+    <!--  时间轴_事件_移动侦测  -->
+    <color name="timeLine_event_motion_color">#CCF69B6A</color>
+    <!--  时间轴_事件_声音侦测  -->
+    <color name="timeLine_event_sound_color">#CC76E4E5</color>
+    <!--  时间轴_事件_门磁传感器  -->
+    <color name="timeLine_event_sensor_color">#CCEDA1A1</color>
+    <!--  时间轴_事件_包裹  -->
+    <color name="timeLine_event_package_color">#CC2E6DE2</color>
+    <!--  时间轴_事件_快递员  -->
+    <color name="timeLine_event_Courier_color">#CC2E6DE2</color>
+    <!--  时间轴_事件_车辆  -->
+    <color name="timeLine_event_car_color">#CCDDD32A</color>
+    <!--  时间轴_事件_陌生人  -->
+    <color name="timeLine_event_face_id_color">#CC026F79</color>
+    <!-- 时间轴_事件_逗留  -->
+    <color name="timeLine_event_stay_color">#CCB0B9BB</color>
+    <!--  时间轴_事件_动物  -->
+    <color name="timeLine_event_animale_color">#CCEE97B6</color>
+    <!--  时间轴_事件_人形  -->
+    <color name="timeLine_event_people_shape_color">#CC6C7FCE</color>
+    <!-- 断电防盗 -->
+    <color name="timeLine_event_power_outage_color">#CC5AE72E</color>
+    <!--  时间轴_事件_撞击  -->
+    <color name="timeLine_event_impact_color">#CC844DEA</color>
+    <!--  时间轴_事件_全时  -->
+    <color name="timeLine_event_fullTime_color">#CC5799EF</color>
+    <!--  时间轴_事件_红外  -->
+    <color name="timeLine_event_pir_color">#CCFF5003</color>
+    <!--  图片小button_通用  -->
+    <color name="image_small_button_color_normal">#3E3F4D</color>
+    <!--  图片小button_通用_全屏  -->
+    <color name="image_small_button_color_normal_transparency">#CC3E3F4D</color>
+    <!--  图片小button_焦点  -->
+    <color name="image_small_button_color_focus">#5798ef</color>
+    <!--  图片小button_焦点_全屏  -->
+    <color name="image_small_button_color_focus_transparency">#CC5798ef</color>
+    <!--  图片button_通用  -->
+    <color name="image_nomal_button_color_nomal">#5799ef</color>
+    <!--  图片button_通用_全屏  -->
+    <color name="image_normal_button_color_transparency">#CC5799ef</color>
+    <!--  图片button_高亮  -->
+    <color name="image_highLight_button_color_nomal">#CD5556</color>
+    <!--  图片button_高亮_全屏  -->
+    <color name="image_highLight_button_color_transparency">#CCCD5556</color>
+    <!--  图片button_推荐  -->
+    <color name="image_recommed_button_color_nomal">#4ACC4C</color>
+    <!--  图片button_推荐_全屏  -->
+    <color name="image_recommed_button_color_transparency">#CC4ACC4C</color>
+    <color name="switch_track_off">#515255</color>
+    <!--  信息提示视图背景颜色(普通提示)  -->
+    <color name="messageTip_background_color_normal">#5799ef</color>
+    <!--  信息提示视图背景颜色（错误提示）  -->
+    <color name="messageTip_background_color_error">#E5552B</color>
+
+    <!--门锁首页圆圈渐变结尾-->
+    <color name="aegis_home_circle_progress_end">#1A5799ef</color>
+    <!--    百分之四十-->
+    <color name="family_list_test_bg">#66000000</color>
+    <!--    蒙版 80%-->
+    <color name="layout_shadow">#44ffffff</color>
+    <!--  Siren 滑条开始颜色  -->
+    <color name="siren_seekBar_start_color">#339AFF</color>
+    <!--  Siren 滑条结束颜色  -->
+    <color name="siren_seekBar_end_color">#F56D68</color>
+    <!--  Siren 滑条描述文本颜色  -->
+    <color name="siren_seekBar_descTextColor">#828282</color>
+    <!--  方向盘正常状态颜色  -->
+    <color name="steerWheel_normal_color">#343434</color>
+    <!--  方向盘获取焦点状态颜色  -->
+    <color name="steerWheel_focus_color">#5799ef</color>
+    <!--  方向盘不可点状态颜色  -->
+    <color name="steerWheel_disable_color">#222222</color>
+
+    <!--  SpotLight 滑条开始颜色  -->
+    <color name="spotlight_seekBar_start_color">#339AFF</color>
+    <!--  SpotLight 滑条结束颜色  -->
+    <color name="spotlight_seekBar_end_color">#F6F11D</color>
+    <!-- Ai状态开关文本颜色   -->
+    <color name="ai_setting_status_textColor">#5FE39D</color>
+    <!--  登录页注册按钮背景颜色  -->
+    <color name="login_sign_up_bg_color">#3261AC</color>
+    <!--  首页自动场景Item分割线颜色  -->
+    <color name="home_auto_model_divider_color">#80cbcbcb</color>
+
+
+    <!--############规范Excel中定义的###########-->
+
+    <color name="color_000000_alpha_99">#99000000</color>
+    <color name="color_000000_alpha_66">#66000000</color>
+    <color name="color_2c2c2c_alpha_aa">#aa2c2c2c</color>
+
+    <!-- 操作表背景颜色 -->
+    <color name="actionSheet_background_color">#F2F2F2</color>
+    <!-- 系统前景色 -->
+    <color name="app_foreground_color">#5799ef</color>
+    <color name="gray_hint_text">#D8D8D8</color>
+    <color name="white_text">#FAFAFA</color>
+    <color name="hintTextColor">#cccccc</color>
+    <color name="textColor">#666666</color>
+    <color name="textBlackBlue">#07364d</color>
+    <!-- 白色-->
+    <color name="material_blue_500">#3399ff</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="item_layer_color">#1E1D1D</color>
+    <color name="kprogresshud_default_color">#80ffffff</color>
+    <color name="color_2c2c2c">#202c2c2c</color>
+    <color name="kprogresshud_grey_color">#449E9E9E</color>
+    <color name="map_transparent">#333399ff</color>
+
+    <color name="color_ff6633">#99ff6633</color>
+    <color name="color_697cd2">#99697cd2</color>
+    <color name="color_29f1ef">#9929f1ef</color>
+    <color name="color_fb1004">#99fb1004</color>
+    <color name="color_ecf9fe">#ecf9fe</color>
+    <color name="gray_a8a4a4">#a8a4a4</color>
+    <color name="color_E8E8E8">#e8e8e8</color>
+    <color name="color_F56161">#F56161</color>
+    <color name="itemLineColore">#efefef</color>
+
+    <color name="color_676767">#676767</color>
+    <color name="menu_item_deviver">#80676767</color>
+    <color name="color_dfdfdf">#DFDFDF</color>
+    <color name="rect_color_green">#8020C29E</color>
+    <color name="rect_color_pink">#80F68997</color>
+    <color name="rect_color_bule">#804A90E2</color>
+    <color name="crop_shadow_color">#CF000000</color>
+    <color name="crop_shadow_wp_color">#4F000000</color>
+    <color name="crop_wp_markers">#7FFFFFFF</color>
+    <color name="back_arrow_bg">#82040404</color>
+    <color name="add_attach">#FF979797</color>
+
+
+    <!---Cookie View-->
+    <color name="color_333333">#333333</color>
+    <color name="default_bg_color">#ab47bc</color>
+    <color name="default_title_color">#ffffff</color>
+    <color name="default_message_color">#ffffff</color>
+    <color name="default_action_color">#26a69a</color>
+
+    <!--iSmart Plus-->
+    <color name="common_edit_text_bg">#FFF4F5FC</color>
+    <color name="common_edit_hint_text">#FF8B8B8B</color>
+    <color name="common_text_color">#FF09314B</color>
+    <color name="common_button_bg_color">#FF4E72CF</color>
+
+    <!--############规范Excel中定义的###########-->
+    <color name="update_progress_around">#264978</color>
+    <color name="yellow">#FED74C</color>
+    <color name="gold">#FFFF00</color>
+    <color name="line_color">#F5F5F5</color>
+    <color name="color_fff2e7">#FFF2E7</color>
+    <color name="color_333">#333333</color>
+    <color name="color_999">#999999</color>
+    <color name="color_ff6e30">#FF6E30</color>
+    <color name="color_ffedbd">#FFEDBD</color>
+    <color name="color_f8f8f8">#F8F8F8</color>
+    <color name="color_ff7b18">#FF7B18</color>
+    <color name="color_e84538">#E84538</color>
+    <color name="color_ee">#EEEEEE</color>
+    <color name="color_2375f1">#2375F1</color>
+    <color name="color_dcf2ff">#DCF2FF</color>
+    <color name="color_ff9b18"> #FF9B18</color>
+    <color name="color_fff2ee">#FFF2EE</color>
+    <color name="color_ffedd2">#FFEDD2</color>
+    <color name="color_dcffff">#DCFFFF</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_2ab445">#019D91</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_b2f027">#b2f027</color>
+    <color name="color_d6d6d6">#d6d6d6</color>
+    <color name="color_f0df27">#f0df27</color>
+    <color name="color_0093f0">#0093f0</color>
+    <color name="color_dcf3e1">#dcf3e1</color>
+    <color name="color_b0c4de">#b0c4de</color>
+    <color name="color_0d4fbd">#0d4fbd</color>
+    <color name="color_4699e5">#4699E5</color>
+    <color name="color_23da72">#23da72</color>
+    <color name="color_d81e06">#d81e06</color>
+
+    <color name="color_text">@color/black</color>
+    <color name="color_text_content">@color/white</color>
+    <color name="color_bg_start">@color/white</color>
+    <color name="color_bg_end">@color/white</color>
+    <color name="color_theme_bg_1">@color/color_4699e5</color>
+    <color name="color_theme_bg_2">@color/color_0d4fbd</color>
+    <color name="color_theme_hint_common">@color/color_23da72</color>
+    <color name="color_theme_hint_fault">@color/color_d81e06</color>
+    <color name="color_theme_hint_waring">@color/color_ff9b18</color>
 </resources>

@@ -1,3 +1,741 @@
 <resources>
-    <string name="app_name">TestPlugin</string>
+    <string name="app_name">Mobile Energy Storage</string>
+    <!--公共字段-->
+    <string name="key_common_setting_label">设置</string>
+    <string name="key_common_date_label">2022–10–11 12:24:00</string>
+    <string name="format_time" translatable="false">yyyy.MM.dd  HH:mm:ss</string>
+
+    <!--首页模块-->
+    <string name="key_home_short_position_label">空  仓</string>
+    <string name="key_home_disabled_label">禁  用</string>
+    <string name="key_home_available_battery_label">可用电池</string>
+    <string name="device_model">Device Model:</string>
+    <string name="key_home_scan_QR_code_tips">扫二维码领换电</string>
+    <string name="key_home_consumer_hotline_label">客服电话：</string>
+    <string name="key_home_cabinet_number_label">机柜编号：</string>
+    <string name="key_home_logo_label">大象换电</string>
+    <!--登录模块-->
+    <string name="key_login_admin_login_label">管理员登录</string>
+    <string name="key_login_username_label">用户名：</string>
+    <string name="key_login_password_label">密&#160;&#160;&#160;&#160;码：</string>
+    <string name="key_login_enter_username_tips">请输入用户名</string>
+    <string name="key_login_enter_password_tips">请输入密码</string>
+    <string name="key_login_login_label">登录</string>
+    <string name="key_login_back_to_home_label">返回首页</string>
+    <!--仓空单元-->
+    <string name="key_warehouse_unit_position_label">仓位</string>
+    <string name="key_warehouse_unit_lock_status_label">锁状态</string>
+    <string name="key_warehouse_unit_lock_mode_label">锁模式</string>
+    <string name="key_warehouse_unit_fire_mode_label">消防模式</string>
+    <string name="key_warehouse_unit_battery_in_place_label">电池在位</string>
+    <string name="key_warehouse_unit_heating_state_label">加热状态</string>
+    <string name="key_warehouse_unit_abnormal_label">异常</string>
+    <string name="key_warehouse_unit_operate_label">操作</string>
+    <string name="key_warehouse_unit_inPlace_mode_label">在位模式</string>
+    <string name="key_warehouse_unit_door_lock_mode_label">门锁模式</string>
+    <string name="key_warehouse_unit_fire_extinguisher_mode_label">灭火器模式</string>
+    <string name="key_warehouse_unit_normally_open_label">常开</string>
+    <string name="key_warehouse_unit_normally_closed_label">常关</string>
+    <string name="key_warehouse_unit_Version_number_label">版号</string>
+    <string name="key_warehouse_unit_setting_label">设置</string>
+    <string name="key_warehouse_unit_one_click_opening_label">一键开仓</string>
+    <string name="key_warehouse_unit_query_mode_label">查询模式</string>
+    <string name="key_warehouse_unit_query_version_label">查询版本</string>
+    <string name="key_warehouse_unit_lift_the_ban_label">解禁</string>
+    <string name="key_warehouse_unit_open_a_position_label">开仓</string>
+    <!--系统配置-->
+    <string name="key_system_configuration_no_network_restart_label">设置机柜无网络重启</string>
+    <string name="key_system_configuration_never_reboot_label">永不重启</string>
+    <string name="key_system_configuration_5_minutes_restart_label">无网络5分钟重启</string>
+    <string name="key_system_configuration_modify_administrator_pwd_label">修改管理员登录密码</string>
+    <string name="key_system_configuration_will_restart_app_label">会重启APP</string>
+    <string name="key_system_configuration_modify_device_number_label">修改设备编号</string>
+    <string name="key_system_configuration_change_software_settings_label">更改软件设置</string>
+    <string name="key_system_configuration_close_software_label">关闭软件</string>
+    <string name="key_system_configuration_run_minimized_label">最小化运行</string>
+    <string name="key_system_configuration_select_ip_platform_label">选择IP连接平台</string>
+    <string name="key_system_configuration_state_grid_label">国网</string>
+    <string name="key_system_configuration_P5266_label">P5266</string>
+    <string name="key_system_configuration_set_battery_threshold_label">设置换电阈值</string>
+    <string name="key_system_configuration_ip_1111_label">1.1.1.1</string>
+    <string name="key_system_configuration_custom_ip_address_label">自定义IP地址</string>
+    <string name="key_system_configuration_custom_ip_address_tip">IP地址和端口号之间用(,)分开,如192.168.1.2,1234</string>
+    <string name="key_system_configuration_modify_customer_phoneNumber_label">修改客服电话</string>
+    <string name="key_system_configuration_open_local_debugging_mode_label">是否打开本地调试模式</string>
+    <string name="key_system_configuration_open_local_debugging_mode_tips">打开调试模式后，风扇和加热不受实际温度影响，蜂鸣器不受时间影响，无网络状态下机柜不会重启</string>
+    <string name="key_system_configuration_closure_label">Close</string>
+    <string name="key_system_configuration_turn_on_label">Open</string>
+    <string name="key_system_configuration_set_to_speaker_label">设置开启喇叭</string>
+    <string name="key_system_configuration_set_to_speaker_tips">开启后，喇叭只会在白天响起(9：00-21：00)</string>
+    <string name="key_system_configuration_turn_off_horn_label">关闭喇叭</string>
+    <string name="key_system_configuration_turn_on_horn_label">开启喇叭</string>
+    <string name="key_system_configuration_test_battery_swap_label">设置进入测试换电IP地址</string>
+    <string name="key_system_configuration_test_battery_swap_tips">IP地址和端口号之间(,)分开，如果地址为空,则退出测试换电模式</string>
+    <string name="key_system_configuration_heating_working_temperature_label">设置加热工作温度</string>
+    <string name="key_system_configuration_heating_working_temperature_tips">注意：启动加热条件只需要满足其中一个，停止加热需要同时满足两个</string>
+    <string name="key_system_configuration_lowest_chamber_start_heat_up_label">仓体最低温度开始加热</string>
+    <string name="key_system_configuration_minimum_cell_start_heat_up_label">电芯最低温度开始加热</string>
+    <string name="key_system_configuration_maximum_chamber_stop_heating_label">仓体最高温度停止加热</string>
+    <string name="key_system_configuration_maximum_cell_stop_heating_label">电芯最高温度停止加热</string>
+    <!--检测单元-->
+    <string name="key_detection_unit_cabinet_temperature_1_label">柜体温度1：</string>
+    <string name="key_detection_unit_cabinet_temperature_2_label">柜体温度2：</string>
+    <string name="key_detection_unit_water_intrusion_label">侵水：</string>
+    <string name="key_detection_unit_smoke_label">烟感：</string>
+    <string name="key_detection_unit_electricity_label">电量：</string>
+    <string name="key_detection_unit_voltage_label">电压：</string>
+    <string name="key_detection_unit_electric_current_label">电流：</string>
+    <string name="key_detection_unit_version_label">版本：</string>
+    <string name="key_detection_unit_abnormal_power_failure_label">异常断电控制：</string>
+    <string name="key_detection_unit_power_outage_label">断电</string>
+    <string name="key_detection_unit_turn_on_label">开启</string>
+    <string name="key_detection_unit_extinguish_label">熄灭</string>
+    <string name="key_detection_unit_close_label">关闭</string>
+    <string name="key_detection_unit_flashlight_label">照明灯：</string>
+    <string name="key_detection_unit_heating_test_label">加热测试：</string>
+    <string name="key_detection_unit_speaker_volume_test_label">喇叭音量测试：</string>
+    <!--充电单元-->
+    <string name="key_charging_unit_battery_sn_code_label">电池SN码：</string>
+    <string name="key_charging_unit_electricity_label">电量：</string>
+    <string name="key_charging_unit_measured_total_voltage_label">实测总电压：</string>
+    <string name="key_charging_unit_number_of_cells_label">电芯数量：</string>
+    <string name="key_charging_unit_soh_label">SOH：</string>
+    <string name="key_charging_unit_recharging_current_label">充电电流：</string>
+    <string name="key_charging_unit_ambient_temperature_label">环境温度：</string>
+    <string name="key_charging_unit_minimum_cell_temperature_label">电芯最低温度：</string>
+    <string name="key_charging_unit_cell_maximum_temperature_label">电芯最高温度：</string>
+    <string name="key_charging_unit_board_temperature_label">板卡温度：</string>
+    <string name="key_charging_unit_cell_data_label">电芯数据：</string>
+    <string name="key_charging_unit_temperature_label">温度：</string>
+    <string name="key_charging_unit_version_label">版本：</string>
+    <string name="key_charging_unit_maximum_voltage_label">最高电压：</string>
+    <string name="key_charging_unit_minimum_voltage_label">最低电压：</string>
+    <string name="key_charging_unit_single_core_differential_pressure_label">单芯压差：</string>
+    <string name="key_charging_unit_charger_voltage_label">充电器电压：</string>
+    <string name="key_charging_unit_charger_current_label">充电器电流：</string>
+    <string name="key_charging_unit_abnormal_battery_label">电池异常：</string>
+    <!--管理界面侧边栏-->
+    <string name="key_manage_sidebar_warehouse_unit_label">仓空单元</string>
+    <string name="key_manage_sidebar_detection_unit_label">检测单元</string>
+    <string name="key_manage_sidebar_charging_unit_label">充电单元</string>
+    <string name="key_manage_sidebar_system_configuration_label">系统配置</string>
+    <string name="key_manage_sidebar_back_to_home_label">返回首页</string>
+    <!--下载APK-->
+    <string name="key_app_update_content_title">更新内容如下：</string>
+    <string name="key_app_update_downloading_btn">正在下载...</string>
+    <string name="key_app_update_downloading_tip">正在下载，请稍后…</string>
+    <string name="key_app_update_download_failure_tip">下载失败，请切换网络后继续尝试！</string>
+    <string name="key_app_update_failed">更新失败</string>
+    <string name="key_common_ok">Determine</string>
+    <string name="key_common_cancel">Cancel</string>
+    <string name="key_app_update_failed_force">更新失败，您必须升级后才能继续使用！</string>
+    <string name="key_app_update_has_been_cancel">更新已被取消</string>
+    <string name="key_app_update_invite_comment_desc">您的感受对我们很重要，我们渴望听到您的真实声音。</string>
+    <string name="key_app_update_invite_comment_dissatisfied_title">不，谢谢</string>
+    <string name="key_app_update_invite_comment_satisfied_title">去评价</string>
+    <string name="key_app_update_invite_comment_title">邀请您评价</string>
+    <string name="key_app_update_invite_never_display">不再显示</string>
+    <string name="key_app_update_network_disconnect_tip">网络已断开，等待恢复...</string>
+    <string name="key_app_update_start_btn">立即更新</string>
+    <string name="key_app_update_title">发现新版本</string>
+
+    <!-- 首页 -->
+    <string name="hjl_title_text">EVSOLUTIONS4U Inc.</string>
+    <string name="text_bms">BMS</string>
+    <string name="text_pcs">PCS</string>
+    <string name="text_bsc">BSC</string>
+    <string name="text_bank">BANK</string>
+    <string name="text_bms_unit_kw">KW</string>
+    <string name="text_bms_unit_v">V</string>
+    <string name="text_bms_unit_p">%</string>
+    <string name="text_bms_unit_kw_h">KWh</string>
+    <string name="text_bms_unit_a">A</string>
+    <string name="text_bms_unit_mv">mV</string>
+    <string name="text_bms_unit_t">℃</string>
+    <string name="text_bms_unit_hz">HZ</string>
+    <string name="text_bms_unit_var">Var</string>
+    <string name="text_bms_unit_ppm">ppm</string>
+    <string name="text_bms_chang_status">BMS Status:</string>
+    <string name="text_bms_chang_status_d">Standby</string>
+    <string name="text_bms_chang_status_t">Halt</string>
+    <string name="text_bms_chang_status_c">Charge</string>
+    <string name="text_bms_chang_status_f">Discharge</string>
+    <string name="text_bms_chang_status_k">Free</string>
+    <string name="text_bms_chang_status_fault">Fault</string>
+    <string name="text_bms_volume">Capacity</string>
+    <string name="text_bms_soc">SOC</string>
+    <string name="text_bms_total_use">Total available amount:</string>
+    <string name="text_bms_total_grid_power">Total grid connected energy:</string>
+    <string name="text_bms_reserve_power">Reserved power:</string>
+    <string name="text_bms_max_out_power">Maximum allowable discharge power:</string>
+    <string name="text_bms_system_max_out_power">Maximum charging power allowed by the system:</string>
+    <string name="text_bms_out_in_status">Charging and discharging status:</string>
+    <string name="text_bms_total_self_out_power">Accumulated self consumption and charging power:</string>
+    <string name="text_bms_total_out_power">Accumulated discharge capacity:</string>
+    <string name="text_bms_total_income">Cumulative gain:</string>
+    <string name="text_bms_ac_voltage">AC voltage</string>
+    <string name="text_bms_ac_electrical">AC current</string>
+    <string name="text_bms_system_power">Power allocated by the system</string>
+    <string name="text_bms_voltage">Voltage</string>
+    <string name="text_bms_electrical">Current</string>
+    <string name="text_bms_a">A</string>
+    <string name="text_bms_b">B</string>
+    <string name="text_bms_c">C</string>
+    <string name="text_bms_dc_voltage">DC voltage</string>
+    <string name="text_bms_dc_electrical">DC current</string>
+    <string name="text_bms_chart_pcs_day">Weekly PCS daily charge and discharge data statistics</string>
+    <string name="text_bms_chart_pcs_history">PCS Historical Power Curve</string>
+
+    <!-- BMS -->
+    <string name="text_bms_battery_stack_info">Battery stack information:</string>
+    <string name="text_bms_battery_stack_total_power">Total power:</string>
+    <string name="text_bms_total_voltage">Total voltage:</string>
+    <string name="text_bms_total_electrical">Total current:</string>
+    <string name="text_bms_battery_stack_soh">Discharged capacity:</string>
+    <string name="text_bms_battery_stack_net_soc">SOC:</string>
+    <string name="text_bms_battery_stack_net_total_volume">Total charging capacity:</string>
+    <string name="text_bms_battery_stack_history_out">Total discharge capacity:</string>
+    <string name="text_bms_battery_bms_info">BMS Information:</string>
+    <string name="text_bms_battery_bunch_info">Battery cluster information:</string>
+    <string name="text_bms_battery_bunch_info_max_voltage_c_no">Maximum voltage cluster number:</string>
+    <string name="text_bms_battery_bunch_info_max_voltage_b_no">Maximum voltage packet number:</string>
+    <string name="text_bms_battery_bunch_info_max_voltage_j_no">Maximum voltage node number:</string>
+    <string name="text_bms_battery_bunch_info_min_voltage_c_no">Minimum voltage cluster number:</string>
+    <string name="text_bms_battery_bunch_info_min_voltage_b_no">Minimum voltage packet number:</string>
+    <string name="text_bms_battery_bunch_info_min_voltage_j_no">Minimum voltage node number:</string>
+    <string name="text_bms_battery_bunch_info_max_voltage">Maximum voltage:</string>
+    <string name="text_bms_battery_bunch_info_min_voltage">Minimum voltage:</string>
+    <string name="text_bms_battery_bunch_info_max_voltage_c">Maximum voltage difference:</string>
+    <string name="text_bms_battery_bunch_info_max_temp_c_no">Maximum temperature cluster number:</string>
+    <string name="text_bms_battery_bunch_info_max_temp_b_no">Maximum temperature packet number:</string>
+    <string name="text_bms_battery_bunch_info_max_temp_j_no">Maximum temperature node number:</string>
+    <string name="text_bms_battery_bunch_info_min_temp_c_no">Minimum temperature cluster number:</string>
+    <string name="text_bms_battery_bunch_info_min_temp_b_no">Minimum temperature packet number:</string>
+    <string name="text_bms_battery_bunch_info_min_temp_j_no">Minimum temperature node number:</string>
+    <string name="text_bms_battery_bunch_info_max_temp">Maximum temperature:</string>
+    <string name="text_bms_battery_bunch_info_min_temp">Minimum temperature:</string>
+    <string name="text_bms_battery_bunch_info_max_temp_c">Maximum temperature difference:</string>
+
+    <string name="text_bms_battery_voltage_single_info">Summary of Single Section Voltage Information:</string>
+    <string name="text_bms_battery_temp_single_info">Summary of Single Section Temperature Information:</string>
+    <string name="text_bms_indoor_temp">Indoor temperature:</string>
+    <string name="text_bms_indoor_humidity">Indoor humidity:</string>
+    <string name="text_bms_indoor_co">Carbon monoxide concentration:</string>
+    <string name="text_bms_indoor_h">Hydrogen concentration:</string>
+    <string name="text_bms_dc_gate_status">DC gate status:</string>
+    <string name="text_bms_battery_enable_status">Enabling state:</string>
+    <string name="text_bms_battery_net_status">Grid connection status:</string>
+    <string name="text_bms_battery_quarantine_switch">Disconnector:</string>
+    <string name="text_bms_battery_z_contactor">Positive contactor:</string>
+    <string name="text_bms_battery_f_contactor">Negative contactor:</string>
+    <string name="text_bms_battery_yc_contactor">Pre charging contactor:</string>
+    <string name="text_bms_battery_cu_voltage">Cluster voltage:</string>
+    <string name="text_bms_battery_cu_electrical">Cluster current:</string>
+    <string name="text_bms_battery_cu_power">Cluster power:</string>
+    <string name="text_bms_battery_cu_soc">Cluster SOC:</string>
+    <string name="text_bms_battery_cu_max_v">Cluster maximum voltage:</string>
+    <string name="text_bms_battery_cu_max_v_b">Cluster maximum voltage packet number:</string>
+    <string name="text_bms_battery_cu_max_v_j">Cluster maximum voltage node number:</string>
+    <string name="text_bms_battery_cu_min_v">Cluster minimum voltage:</string>
+    <string name="text_bms_battery_cu_min_v_b">Cluster minimum voltage packet number:</string>
+    <string name="text_bms_battery_cu_min_v_j">Cluster minimum voltage node number:</string>
+    <string name="text_bms_battery_cu_max_t">Cluster maximum temperature:</string>
+    <string name="text_bms_battery_cu_max_t_b">Cluster maximum temperature package number:</string>
+    <string name="text_bms_battery_cu_max_t_j">Cluster maximum temperature node number:</string>
+    <string name="text_bms_battery_cu_min_t">Cluster minimum temperature:</string>
+    <string name="text_bms_battery_cu_min_t_b">Cluster minimum temperature package number:</string>
+    <string name="text_bms_battery_cu_min_t_j">Cluster minimum temperature node number:</string>
+
+    <!-- PCS -->
+    <string name="text_bms_pcs_info">PCS Information</string>
+    <string name="text_bms_pcs_status">PCS status</string>
+    <string name="text_bms_pcs_status_r">PCS soft protection status</string>
+    <string name="text_bms_pcs_status_s">PCS real-time status</string>
+    <string name="text_bms_pcs_status_info">PCS status information</string>
+    <string name="text_bms_pcs_info_total_in_power">Accumulated charging capacity:</string>
+    <string name="text_bms_pcs_info_total_out_power">Accumulated discharge capacity:</string>
+    <string name="text_bms_pcs_info_today_in_power">Daily charging capacity:</string>
+    <string name="text_bms_pcs_info_today_out_power">Daily discharging capacity:</string>
+    <string name="text_bms_pcs_info_reactance_t1">Reactor temperature 1:</string>
+    <string name="text_bms_pcs_info_reactance_t2">Reactor temperature 2:</string>
+    <string name="text_bms_pcs_info_work_mode">PCS working mode:</string>
+    <string name="text_bms_pcs_info_mode_status">PCS mode status:</string>
+    <string name="text_bms_pcs_info_control_mode">PCS control mode:</string>
+    <string name="text_bms_pcs_status_ab_voltage">AB line voltage:</string>
+    <string name="text_bms_pcs_status_bc_voltage">BC line voltage:</string>
+    <string name="text_bms_pcs_status_ca_voltage">CA line voltage:</string>
+    <string name="text_bms_pcs_status_a_electrical">A-phase current:</string>
+    <string name="text_bms_pcs_status_b_electrical">B-phase current:</string>
+    <string name="text_bms_pcs_status_c_electrical">C-phase current:</string>
+    <string name="text_bms_pcs_status_y_work">Active power:</string>
+    <string name="text_bms_pcs_status_n_work">Reactive power:</string>
+    <string name="text_bms_pcs_status_net_rate">Grid frequency:</string>
+    <string name="text_bms_pcs_status_power_factor">Power factor:</string>
+    <string name="text_bms_pcs_status_direct_voltage">DC terminal voltage:</string>
+    <string name="text_bms_pcs_status_direct_electrical">DC terminal current:</string>
+    <string name="text_bms_pcs_status_direct_power">DC power:</string>
+    <string name="text_bms_pcs_status_box_temp">Box temperature:</string>
+    <string name="text_bms_pcs_status_ch1_i">CH1IGBT</string>
+    <string name="text_bms_pcs_status_ch2_i">CH2IGBT</string>
+    <string name="text_bms_pcs_status_ch1_s">CH1 radiator</string>
+    <string name="text_bms_pcs_status_ch2_s">CH2 radiator</string>
+    <string name="text_bms_pcs_status_temp_u">U-phase temperature:</string>
+    <string name="text_bms_pcs_status_temp_v">V-phase temperature:</string>
+    <string name="text_bms_pcs_status_temp_w">W-phase temperature:</string>
+    <string name="text_bms_pcs_status_temp_1">Temperature 1:</string>
+    <string name="text_bms_pcs_status_temp_2">Temperature 2:</string>
+    <string name="text_bms_pcs_status_temp_3">Temperature 3:</string>
+
+    <!-- 海外移动储能充电桩 -->
+    <string name="move_text_title_bms_page">BMS</string>
+    <string name="move_text_title_bms_alarm_page">BMS Alarm</string>
+    <string name="move_text_title_curve_page">Charging</string>
+    <string name="move_text_title_policy_page">Policy</string>
+    <string name="move_text_title_alarm_page">EVCC Log</string>
+    <string name="move_text_title_calibration_page">Calibration</string>
+    <string name="move_text_title_param_page">Param</string>
+    <string name="move_text_title_admin_page">Admin</string>
+    <string name="move_text_alarm_date">Alarm date</string>
+    <string name="move_text_alarm_name">Alarm name</string>
+    <string name="move_text_alarm_value">Alarm Value</string>
+    <string name="move_text_alarm_content">Alarm Content</string>
+    <string name="move_text_chg_vol_limit">Charge voltage limit:</string>
+    <string name="move_text_chg_cur_limit">Charge current limit:</string>
+    <string name="move_text_dischg_cur_limit">Discharge current limit:</string>
+    <string name="move_text_dischg_vol_limit">Discharge voltage limit:</string>
+    <string name="move_text_soc">SOC:</string>
+    <string name="move_text_soh">SOH:</string>
+    <string name="move_text_battery_nominal_capacity">System Status:</string>
+    <string name="move_text_total_vol">Total voltage:</string>
+    <string name="move_text_total_cur">Total current:</string>
+    <string name="move_text_total_power">Total power:</string>
+    <string name="move_text_max_cell_vol">Max cell voltage:</string>
+    <string name="move_text_max_cell_vol_diff">Max cell voltage diff:</string>
+    <string name="move_text_max_cell_vol_num">Max cell voltage num:</string>
+    <string name="move_text_max_cell_vol_j_num">Max cell voltage section num:</string>
+    <string name="move_text_max_cell_vol_mod_num">Max cell voltage module num:</string>
+    <string name="move_text_min_cell_vol">Min cell voltage:</string>
+    <string name="move_text_min_cell_vol_num">Min cell voltage num:</string>
+    <string name="move_text_min_cell_vol_j_num">Min cell voltage section num:</string>
+    <string name="move_text_min_cell_vol_mod_num">Min cell voltage module num:</string>
+    <string name="move_text_max_temp">Max temp:</string>
+    <string name="move_text_max_temp_diff">Max temp diff:</string>
+    <string name="move_text_max_temp_num">Max temp num:</string>
+    <string name="move_text_max_temp_j_num">Max temp section num:</string>
+    <string name="move_text_max_temp_mod_num">Max temp module num:</string>
+    <string name="move_text_min_temp">Min temp:</string>
+    <string name="move_text_min_dis_pow">DisPower:</string>
+    <string name="move_text_min_temp_num">Min temp num:</string>
+    <string name="move_text_min_temp_j_num">Min temp section num:</string>
+    <string name="move_text_min_temp_mod_num">Min temp module num:</string>
+    <string name="move_text_chg_power">Charge power:</string>
+    <string name="move_text_dischg_power">Discharge power:</string>
+    <string name="move_text_cur_chg_ele">Current charge capacity:</string>
+    <string name="move_text_cur_dischg_ele">Current discharge capacity:</string>
+
+    <!-- 海外移动储能充电视图 -->
+    <string name="text_bms_battery_charge_info">Battery Charge Info:</string>
+    <string name="text_bms_battery_alarm_info">Battery Alarm Info:</string>
+    <string name="text_bms_bms_alarm_info">BMS Alarm Info:</string>
+    <string name="text_bms_charging_pile_status">Charging pile status:</string>
+    <string name="text_bms_charging_mode_out_v">Charging Out Vol:</string>
+    <string name="text_bms_charging_mode_out_c">Charging Out Cur:</string>
+    <string name="text_bms_charging_mode_out_p">Charging Out Power:</string>
+    <string name="text_bms_charge_chg_type">Charge status:</string>
+    <string name="text_bms_charge_connect_status">Charge connect status:</string>
+    <string name="text_bms_charge_chg_type_0">Free</string>
+    <string name="text_bms_charge_chg_type_1">DC Charging</string>
+    <string name="text_bms_charge_chg_type_2">AC Charging</string>
+    <string name="text_bms_charge_gun_type_0">Free</string>
+    <string name="text_bms_charge_gun_type_1">Insert Gun</string>
+    <string name="text_bms_charge_gun_type_2">Charging</string>
+    <string name="text_bms_charge_dc_vol">DC Vol:</string>
+    <string name="text_bms_charge_dc_cur">DC Cur:</string>
+    <string name="text_bms_charge_ac_vol">AC VOl:</string>
+    <string name="text_bms_charge_ac_cur">AC Cur:</string>
+    <string name="text_bms_charge_ask_vol">Ask Vol:</string>
+    <string name="text_bms_charge_asl_cur">Ask Cur:</string>
+    <string name="text_bms_charge_soc">SOC:</string>
+    <string name="text_bms_charge_temp_1">Temp 1:</string>
+    <string name="text_bms_charge_temp_2">Temp 2:</string>
+    <string name="text_bms_charge_gun_status">Gun status:</string>
+    <string name="text_bms_charge_gun_temp_1">Gun Temperature 1:</string>
+    <string name="text_bms_charge_gun_temp_2">Gun Temperature 2:</string>
+    <string name="text_bms_charge_gun_cc">Gun CC:</string>
+    <string name="text_bms_charge_gun_cp">Gun CP:</string>
+    <string name="text_bms_charge_gun_cp_fre">Gun CP Fre:</string>
+    <string name="text_bms_charge_gun_cp_duty">Gun CP Duty:</string>
+    <string name="text_bms_charge_gun_time">Charging time:</string>
+    <string name="text_bms_charge_gun_power">Charging power:</string>
+    <string name="text_bms_charge_gun_kwh">Charging kWh:</string>
+    <string name="text_alarm_charge_mode_pfc">Module PFC</string>
+    <string name="text_alarm_charge_in_v_over">In Vol Over</string>
+    <string name="text_alarm_charge_in_v_under">In Vol Under</string>
+    <string name="text_alarm_charge_phase_imbalance">Phase Imbalance</string>
+    <string name="text_alarm_charge_phase_loss">Phase Loss</string>
+    <string name="text_alarm_charge_uneven_current">Uneven Current</string>
+    <string name="text_alarm_charge_id_duplicates">ID Duplicates</string>
+    <string name="text_alarm_charge_power_limit">Power Limit</string>
+    <string name="text_alarm_charge_com_interrupted">Comm is Interrupted</string>
+    <string name="text_alarm_charge_walk_in">WALK_IN</string>
+    <string name="text_alarm_charge_output_over">Output Over</string>
+    <string name="text_alarm_charge_temp_over">Temp Over</string>
+    <string name="text_alarm_charge_fun_fault">Fun Fault</string>
+    <string name="text_alarm_charge_protection_fault">Protection Fault</string>
+    <string name="text_alarm_charge_md_fault">Module failure alarm</string>
+    <string name="text_alarm_charge_dc_down">Module DC Shutdown</string>
+    <string name="text_alarm_charge_md_sleep">Module Sleep</string>
+    <string name="text_alarm_charge_out_short">Out Short</string>
+    <string name="text_switch_smoke_detector_0">Smoke detector:Normal</string>
+    <string name="text_switch_smoke_detector_1">Smoke detector:Action</string>
+    <string name="text_switch_water_immersion_0">Water immersion:Normal</string>
+    <string name="text_switch_water_immersion_1">Water immersion:Action</string>
+    <string name="text_switch_fire_fighting_0">Fire fighting:Normal</string>
+    <string name="text_switch_fire_fighting_1">Fire fighting:Action</string>
+    <string name="text_switch_door_status_0">Door status:Close</string>
+    <string name="text_switch_door_status_1">Door status:Open</string>
+    <string name="text_switch_ac_connect_0">AC Connect:Close</string>
+    <string name="text_switch_ac_connect_1">AC Connect:Break</string>
+    <string name="text_switch_dc_connect_0">DC Connect:Close</string>
+    <string name="text_switch_dc_connect_1">DC Connect:Break</string>
+    <string name="text_calibration_select_channel">Select channel:</string>
+    <string name="text_calibration_sampling_1">Sampling 1</string>
+    <string name="text_calibration_sampling_2">Sampling 2</string>
+    <string name="text_calibration_true_value">Real value:</string>
+    <string name="text_calibration_ad_value">AD value:</string>
+    <string name="text_calibration_test_value">Test value:</string>
+    <string name="text_calibration_result">Calibration result:</string>
+    <string name="text_calibration_gain" translatable="false">Gain:</string>
+    <string name="text_calibration_offset" translatable="false">Offset:</string>
+    <string name="text_btn_default">Default</string>
+    <string name="text_btn_show_data">Query Data</string>
+    <string name="text_btn_sample_one">Sample One</string>
+    <string name="text_btn_sample_two">Sample Two</string>
+    <string name="text_btn_calibration">Calibration</string>
+    <string name="text_charge_stop_reason">Stop Reason:</string>
+    <string name="text_charge_stop_reason_0">Null</string>
+    <string name="text_charge_stop_reason_1">Load Over Temperature</string>
+    <string name="text_charge_stop_reason_2">Over Voltage</string>
+    <string name="text_charge_stop_reason_3">DC Over Current</string>
+    <string name="text_charge_stop_reason_4">Reverse Connection Of DC Line</string>
+    <string name="text_charge_stop_reason_5">Auxiliary Source Abnormality</string>
+    <string name="text_charge_stop_reason_6">Charge Point Request Stop</string>
+    <string name="text_charge_stop_reason_7">Reaching The Set Time</string>
+    <string name="text_charge_stop_reason_8">EMERGENCY STOP</string>
+    <string name="text_charge_stop_reason_9">CC1 Abnormal</string>
+    <string name="text_charge_stop_reason_10">CC2 Abnormal</string>
+    <string name="text_charge_stop_reason_16">Received Identification Message (00) Timeout</string>
+    <string name="text_charge_stop_reason_17">Received Identification Message (AA) Timeout</string>
+    <string name="text_charge_stop_reason_18">Received Maximum Output Capacity Message Timeout</string>
+    <string name="text_charge_stop_reason_19">Timed out receiving charging preparation message (00) from the charger</string>
+    <string name="text_charge_stop_reason_20">Timed out receiving charging preparation message (AA) from the charger</string>
+    <string name="text_charge_stop_reason_21">Received charger charging status message timeout</string>
+    <string name="text_charge_stop_reason_22">Battery Fully Charged</string>
+    <string name="text_charge_stop_reason_23">Charging Station Fault Stop</string>
+    <string name="text_charge_stop_reason_24">Charger Over Temperature</string>
+    <string name="text_charge_stop_reason_25">Connector Over Temperature</string>
+    <string name="text_charge_stop_reason_26">Excessive Temperature inside the charging station</string>
+    <string name="text_charge_stop_reason_27">Abnormal Battery Level</string>
+    <string name="text_charge_stop_reason_28">EMERGENCY STOP</string>
+    <string name="text_charge_stop_reason_29">Other Faults</string>
+    <string name="text_charge_stop_reason_30">Current Mismatch</string>
+    <string name="text_charge_stop_reason_31">Abnormal Voltage</string>
+    <string name="text_charge_stop_reason_33">Emergency Stop</string>
+    <string name="text_charge_stop_reason_34">Aerosol Fire Extinguishing</string>
+    <string name="text_charge_stop_reason_41">Return to 9V after Over Current</string>
+    <string name="text_charge_stop_reason_42">CP voltage is not within the range of 12V, 9V, and 6V</string>
+    <string name="text_charge_stop_reason_43">CP frequency abnormality</string>
+    <string name="text_charge_stop_reason_44">CP duty cycle abnormal</string>
+    <string name="text_charge_stop_reason_45">Abnormal CC resistance</string>
+    <string name="text_charge_stop_reason_46">Door Open</string>
+    <string name="text_charge_stop_reason_47">AC Over Current</string>
+    <string name="text_charge_stop_reason_48">Abnormal voltage</string>
+    <string name="text_charge_stop_reason_49">Abnormal current</string>
+    <string name="text_charge_stop_reason_50">Temperature Alarm</string>
+    <string name="text_charge_stop_reason_51">Abnormal CP voltage setting of charging station</string>
+    <string name="text_charge_stop_reason_52">Charge Point Request Stop</string>
+    <string name="text_charge_stop_reason_53">The battery is fully charged</string>
+    <string name="text_charge_stop_reason_54">Aerosol Fire Extinguishing</string>
+    <string name="text_charge_stop_reason_55">Emergency Stop</string>
+    <string name="text_bms_alarm_diff_temp_h">Excessive temperature difference</string>
+    <string name="text_bms_alarm_diff_vol_h">Excessive pressure difference</string>
+    <string name="text_bms_alarm_cell_temp_l">Low temperature of monomer</string>
+    <string name="text_bms_alarm_cell_temp_h">Monomer Over Temperature</string>
+    <string name="text_bms_alarm_cell_vol_l">Single Under Voltage</string>
+    <string name="text_bms_alarm_cell_vol_h">Monomer Over Voltage</string>
+    <string name="text_bms_alarm_vol_l">Total voltage Under Voltage</string>
+    <string name="text_bms_alarm_vol_h">Total pressure Over Voltage</string>
+    <string name="text_bms_alarm_in_s_f">insulation leakage</string>
+    <string name="text_bms_alarm_soc_l">SOC too low</string>
+    <string name="text_bms_alarm_soc_h">SOC too high</string>
+    <string name="text_bms_alarm_line_t_f">Single temperature sensing cable fault</string>
+    <string name="text_bms_alarm_line_v_f">Single voltage cable fault</string>
+    <string name="text_bms_alarm_com_f">Master slave communication failure</string>
+    <string name="text_bms_alarm_vol_h_f">Abnormal high voltage</string>
+    <string name="text_bms_alarm_cur_h">Excessive current</string>
+    <string name="text_bms_alarm_t2_h">T2 high temperature</string>
+    <string name="text_bms_alarm_t1_h">T1 high temperature</string>
+    <string name="text_bms_alarm_in_l">Low power supply</string>
+    <string name="text_bms_alarm_in_h">Power supply too high</string>
+    <string name="text_bms_alarm_chg_pre">Pre Charged state</string>
+    <string name="text_bms_alarm_connect">Adhesion</string>
+    <string name="text_bms_alarm_pcs">PCS malfunction</string>
+    <string name="text_bms_alarm_slave">Slave failure</string>
+    <string name="text_bms_alarm_vol_lock">HVIL</string>
+    <string name="text_bms_alarm_f_b_f">Abnormal feedback</string>
+    <string name="text_bms_alarm_f_u_f">Fuse status</string>
+    <string name="text_bms_alarm_ems_f">EMS status</string>
+    <string name="text_bms_alarm_f_c_f">Fire fighting</string>
+    <string name="text_bms_alarm_em_c_f">EMERGENCY STOP</string>
+    <string name="text_bms_alarm_o_c_f">open circuit</string>
+    <string name="text_bms_alarm_lim_f">Ultimate fault</string>
+    <string name="text_bms_alarm_temp_fast">Temperature rise too fast</string>
+    <string name="text_dialog_exit_app">Exit APP</string>
+    <string name="text_dialog_input_admin_password">Please enter the administrator password</string>
+    <string name="text_dialog_password_error">Password Error</string>
+
+    <!-- 海外移动储能充电桩告警 -->
+    <string name="move_alarm_type_grade_one">Grade one</string>
+    <string name="move_alarm_type_grade_two">Grade two</string>
+    <string name="move_alarm_type_grade_battery">Alarm battery</string>
+    <string name="move_alarm_type_grade_module">Alarm module</string>
+    <string name="move_alarm_grade_one_f1">BMU communication failure</string>
+    <string name="move_alarm_grade_one_f2">Total over voltage</string>
+    <string name="move_alarm_grade_one_f3">Total under voltage</string>
+    <string name="move_alarm_grade_one_f4">High charging temperature</string>
+    <string name="move_alarm_grade_one_f5">Low charging temperature</string>
+    <string name="move_alarm_grade_one_f6">Cell over pressure</string>
+    <string name="move_alarm_grade_one_f7">Cell under voltage</string>
+    <string name="move_alarm_grade_one_f8">Discharge over current</string>
+    <string name="move_alarm_grade_one_f9">Charging over current</string>
+    <string name="move_alarm_grade_one_f10">High discharge temperature</string>
+    <string name="move_alarm_grade_one_f11">Low discharge temperature</string>
+    <string name="move_alarm_grade_one_f12">Cell imbalance (in-string)</string>
+    <string name="move_alarm_grade_one_f13">Unbalanced temperature (in-string)</string>
+    <string name="move_alarm_grade_one_f14">Low SOC</string>
+    <string name="move_alarm_grade_one_f15">Low insulation resistance</string>
+    <string name="move_alarm_grade_module_f1">The module is severely uneven</string>
+    <string name="move_alarm_grade_module_f2">Three-phase input phase loss</string>
+    <string name="move_alarm_grade_module_f3">The three-phase input is unbalanced</string>
+    <string name="move_alarm_grade_module_f4">Input under voltage</string>
+    <string name="move_alarm_grade_module_f5">Input over voltage</string>
+    <string name="move_alarm_grade_module_f6">The output is shorted</string>
+    <string name="move_alarm_grade_module_f7">Module failure alarm</string>
+    <string name="move_alarm_grade_module_f8">Module protection alarms</string>
+    <string name="move_alarm_grade_module_f9">Fan failure alarm</string>
+    <string name="move_alarm_grade_module_f10">Module over temperature alarm</string>
+    <string name="move_alarm_grade_module_f11">The module outputs an over voltage alarm</string>
+    <string name="move_alarm_grade_module_f12">Module communication is interrupted</string>
+
+    <!-- 海外移动储能设置 -->
+    <string name="move_param_device_id">Device ID:</string>
+    <string name="move_param_device_ip" translatable="false">Server Info:</string>
+    <string name="move_param_evcc_log">EVCC Log:</string>
+    <string name="move_param_full_stop_soc">Full power off SOC:</string>
+    <string name="move_param_dischg_stop_soc">Discharge cut-off SOC:</string>
+    <string name="move_param_max_chg_power">Maximum charging power:</string>
+    <string name="move_param_max_dischg_power">Maximum discharging power:</string>
+    <string name="move_param_full_stop_vol">Cut-off charging voltage:</string>
+    <string name="move_param_dischg_stop_vol">Power limiting unit voltage:</string>
+    <string name="move_param_full_stop_temp">Cut-off charging temperature:</string>
+    <string name="move_param_dischg_stop_temp">Cut-off discharging temperature:</string>
+    <string name="move_param_control_policy">Policy control:</string>
+    <string name="move_param_system_language">System language:</string>
+    <string name="move_param_system_language_auto">By system</string>
+    <string name="move_param_system_language_cn">Chinese</string>
+    <string name="move_param_system_language_en">English</string>
+    <string name="move_param_system_language_kr">Korean</string>
+    <string name="move_admin_android_server_port">Server port:</string>
+    <string name="move_tip_input_device_id">Please enter the device ID</string>
+    <string name="move_tip_input_stop_soc_c">Please input SOC for full power shutdown</string>
+    <string name="move_tip_input_stop_soc_f">Please input the discharge cut-off SOC</string>
+    <string name="move_tip_input_stop_soc_f_range">The discharge cutoff SOC range is between 5 and 70</string>
+    <string name="move_tip_input_stop_vol_f_range">The discharge cut-off voltage cannot be lower than 3.1V</string>
+    <string name="move_tip_input_max_power_c">Please enter the maximum charging power</string>
+    <string name="move_tip_input_max_power_f">Please enter the maximum discharge power</string>
+    <string name="move_tip_input_stop_vol_c">Please input the cutoff charging voltage</string>
+    <string name="move_tip_input_stop_vol_f">Please input the cut-off discharge voltage</string>
+    <string name="move_tip_input_stop_temp_c">Please enter the cut-off charging temperature</string>
+    <string name="move_tip_input_stop_temp_f">Please enter the cut-off discharge temperature</string>
+    <string name="move_tip_setting_success">Successfully</string>
+    <string name="move_tip_low_power">The battery is low, please charge it</string>
+    <string name="move_tip_warn">WARN</string>
+
+    <!-- 按钮和提示 -->
+    <string name="move_button_text_submit">Submit</string>
+    <string name="move_button_text_cancel">Cancel</string>
+    <string name="move_button_text_clean_all">Clean All</string>
+    <string name="move_button_text_ok">OK</string>
+    <string name="move_button_text_save_setting">Save setting?</string>
+
+    <string-array name="policy_system_status_courses">
+        <item>Grid-connected</item>
+        <item>Off-grid system</item>
+    </string-array>
+
+    <string-array name="policy_energy_courses">
+        <item>Time period control</item>
+        <item>48 segment control</item>
+        <item>Light storage and charging control</item>
+    </string-array>
+
+    <string-array name="ac_status_array">
+        <item>close</item>
+        <item>open</item>
+    </string-array>
+
+    <string-array name="bms_alarm_info_fault">
+        <item>BMU hardware fault</item>
+        <item>BCU hardware fault</item>
+        <item>fuse fault</item>
+        <item>Contactor fail</item>
+        <item>BMU communicate fault</item>
+        <item>BAU communicate fault</item>
+        <item>Cur sensor fault</item>
+        <item>insulation device faulty</item>
+        <item>switch disconnected</item>
+        <item>Bms inner com Fail</item>
+        <item>Ems com Fail</item>
+        <item>Rack volDiff high</item>
+        <item>Rack curDiff high</item>
+        <item>Master1 com fail</item>
+        <item>Master2 com fail</item>
+    </string-array>
+
+
+    <string-array name="bms_level_alarm_info_waring">
+        <item>Total voltage overvoltage</item>
+        <item>Total voltage undervoltage</item>
+        <item>Cell overvoltage</item>
+        <item>Cell undervoltage</item>
+        <item>Excessive discharge current</item>
+        <item>Overcharge current</item>
+        <item>discharge battery overheated</item>
+        <item>discharge battery under temperature</item>
+        <item>charge battery is overheated</item>
+        <item>charge battery is underheated</item>
+        <item>insulation resistance is too low</item>
+        <item>The pole temperature is too high</item>
+        <item>Connector temperature is too high</item>
+        <item>cell pressure difference is too high</item>
+        <item>Excessive temperature difference of cell</item>
+        <item>SOC lower alarm level</item>
+    </string-array>
+
+    <string-array name="bms_rock_run_status_array">
+        <item>normal</item>
+        <item>Banned from filling</item>
+        <item>banned</item>
+        <item>Bide one is time</item>
+        <item>Shut down</item>
+        <item>unknown</item>
+    </string-array>
+
+    <string-array name="bms_Grid_status_array">
+        <item>no operation</item>
+        <item>start</item>
+        <item>succeed</item>
+        <item>finish</item>
+        <item>unknown</item>
+    </string-array>
+
+    <!--    <string-array name="bms_Rack_status_array">-->
+    <!--        <item>enable</item>-->
+    <!--        <item>disable</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="bms_Rack_online_array">-->
+    <!--        <item>online</item>-->
+    <!--        <item>offline</item>-->
+    <!--    </string-array>-->
+
+
+    <string-array name="bms_Rack_Switch_array">
+        <item>Cluster%d enable</item>
+    </string-array>
+
+    <string-array name="bms_Rack_online_array">
+        <item>Cluster%d online</item>
+    </string-array>
+
+    <string-array name="bms_Master_Communicate_array">
+        <item>Master%d com Fail</item>
+    </string-array>
+
+    <string-array name="policy_calibration_courses">
+        <item>0:CP Voltage</item>
+        <item>1:CC Resistance</item>
+        <item>2:Temperature 1</item>
+        <item>3:Temperature 2</item>
+        <item>4:Gun Temperature</item>
+    </string-array>
+    <string name="move_text_title_ac_page">acControl</string>
+    <string name="text_ac_set_para_status">Air condition Ststus:</string>
+    <string name="text_ac_set_para_cold_diff">Refrigeration band:</string>
+    <string name="text_ac_set_para_cold_temp">Refrigeration point:</string>
+    <string name="text_ac_set_para_heat_temp">Heating stop point:</string>
+    <string name="text_ac_set_para_heat_diff">Heating start band:</string>
+    <string name="text_ac_set_para_btn">Send</string>
+    <string name="text_ac_set_para_title">AC Para Set:</string>
+    <string name="text_ac_alarm_para_title">AC Alarm Message:</string>
+    <string name="text_ac_high_temp">High Temp. alarm:</string>
+    <string name="text_ac_high_humidity">High humidity alarm:</string>
+    <string name="text_ac_coil_freeze_protection">Coil freeze protection:</string>
+    <string name="text_ac_evaporator_temp_sensor_failure">Evaporator Temp. sensor failur:</string>
+    <string name="text_ac_condenser_temp_sensor_failure">Condenser Temp. sensor failure:</string>
+    <string name="text_ac_text_ac_indoor_temp_sensor_failure">Indoor Temp. sensor failure:</string>
+    <string name="text_ac_humidity_sensor_failure">Humidity sensor failure:</string>
+    <string name="text_ac_HP_alarm">HP. alarm:</string>
+    <string name="text_ac_HP_lock">HP. lock :</string>
+    <string name="text_ac_over_voltage_alarm">AC over voltage alarm:</string>
+    <string name="text_ac_under_voltage_alarm">AC under voltage alarm:</string>
+    <string name="move_tip_input_cold_temp">Please enter the cooling temperature !</string>
+    <string name="move_tip_input_cold_diff">Please enter refrigeration return difference!</string>
+    <string name="move_tip_input_heat_temp">Please enter the heating temperature!</string>
+    <string name="move_tip_input_heat_diff">Please enter the heating return difference!</string>
+    <string name="move_button_text_issue_setting">Is it delivered?</string>
+    <string name="text_ac_msg_para_title">Air conditioner status information:</string>
+    <string name="text_ac_msg_status">Machine status:</string>
+    <string name="text_ac_msg_temp">Temperature:</string>
+    <string name="text_ac_msg_humi">Humidity:</string>
+    <string name="text_ac_msg_compressor">compressor:</string>
+    <string name="text_ac_msg_heat_status">Electric heating:</string>
+    <string name="text_ac_msg_ac_vol">Ac voltage:</string>
+    <string name="text_ac_msg_com_status">Communication:</string>
+    <string name="text_alarm_icon_yellow_show">Level 1 yellow alarm</string>
+    <string name="text_alarm_icon_orange_show">Orange Level 2 alarm</string>
+    <string name="text_alarm_icon_red_show">Level 3 red alarm</string>
+    <string name="text_alarm_icon_green_show">Green no abnormality</string>
+    <string name="text_bms_bat_run_status">Rack Run State:</string>
+    <string name="text_bms_bat_contactor_status">Rack Connection State</string>
+    <string name="text_bms_bat_hvp_Temp">HVB temp:</string>
+    <string name="text_ac_com_normal">Normal</string>
+    <string name="text_ac_com_exception">Fail</string>
+    <string name="text_run_status_show">run</string>
+    <string name="text_stop_status_show">stop</string>
+    <string name="text_sys_set_scram_button">EMERGENCY:</string>
+    <string name="text_sys_set_scram_open">open</string>
+    <string name="text_sys_set_scram_close">close</string>
+    <string name="text_door_status">door:</string>
+    <string name="text_gasoloid_status_init">gasoloid</string>
+    <string name="text_bms_charge_Pow">Charging pile Pow:</string>
+    <string name="text_bms_grid_connect_status">Grid connect state:</string>
+    <string name="text_bms_cluster1_status">Cluster1 status</string>
+    <string name="text_bms_cluster2_status">Cluster2 status</string>
+    <string name="text_bms_cluster1_online">Cluster 1 online:</string>
+    <string name="text_bms_cluster2_online">Cluster2 online</string>
+    <string name="text_bms_clusterNum_online">Number of online clusters:</string>
+    <string name="text_bms_clusterNum">Cluater Num:</string>
+    <string name="move_bat_max_chg_power">battery max charge pow:</string>
+    <string name="text_batGrid_status_init">Com Arch:</string>
+    <string name="text_sys_set_grid_open">three</string>
+    <string name="text_sys_set_grid_off">two</string>
+    <string name="text_rack_status_show">enable</string>
+    <string name="text_rackdis_status_show">disable</string>
+    <string name="move_text_rack_cur_diff">Rack cur Diff:</string>
+    <string name="move_text_rack_vol_diff">Rack vol diff:</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
