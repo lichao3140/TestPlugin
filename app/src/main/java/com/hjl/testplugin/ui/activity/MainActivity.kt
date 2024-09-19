@@ -1,4 +1,4 @@
-package com.hjl.testplugin
+package com.hjl.testplugin.ui.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello 2222 $name!",
+        text = "Hello 555 $name!",
         modifier = modifier
     )
 }

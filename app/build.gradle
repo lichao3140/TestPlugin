@@ -35,6 +35,8 @@ android {
     }
     buildFeatures {
         compose true
+        viewBinding true
+        dataBinding true
     }
     composeOptions {
         kotlinCompilerExtensionVersion '1.5.1'
@@ -68,6 +70,7 @@ dependencies {
     implementation "com.qihoo360.replugin:replugin-plugin-lib:3.1.0"
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
+    implementation 'com.github.buhuiming:SupportCore:1.0.2-beta01'
     implementation 'me.xuexuan:fragmentationx:1.0.6'
     // rxjava
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
@@ -95,6 +98,21 @@ dependencies {
     // 自适应屏幕
     implementation 'me.jessyan:autosize:1.2.1'
     implementation 'lib.kingja.switchbutton:switchbutton:1.1.8'
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+    implementation 'com.afollestad.material-dialogs:input:3.3.0'
+    implementation 'com.afollestad.material-dialogs:datetime:3.3.0'
+    implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
+    implementation 'com.github.GrenderG:Toasty:1.5.2'
+    implementation 'io.github.xmaihh:serialport:2.1.2'
+    // 图片框架
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    // RecyclerView
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.11'
+    // 二维码
+    implementation 'com.google.zxing:core:3.5.2'
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+    // EventBus
+    implementation 'org.greenrobot:eventbus:3.3.1'
     implementation project(':library:jsbridgekt')
 }
 

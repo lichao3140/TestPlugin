@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mobile Energy Storage</string>
+    <string name="app_name">插件化</string>
     <!--公共字段-->
     <string name="key_common_setting_label">设置</string>
     <string name="key_common_date_label">2022–10–11 12:24:00</string>
