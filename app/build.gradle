@@ -15,9 +15,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary true
-        }
+//        vectorDrawables {
+//            useSupportLibrary true
+//        }
     }
 
     buildTypes {
@@ -69,6 +69,7 @@ dependencies {
     // 插件模块
     implementation "com.qihoo360.replugin:replugin-plugin-lib:3.1.0"
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'com.github.buhuiming:SupportCore:1.0.2-beta01'
     implementation 'me.xuexuan:fragmentationx:1.0.6'
