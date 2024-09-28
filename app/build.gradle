@@ -126,8 +126,8 @@ subprojects {
         // 插件名
         pluginName = "w98217"
         // 宿主app的包名
-        hostApplicationId = "com.hjl.androidtcu"
+        hostApplicationId = "com.qihoo360.replugin.sample.host"
         // 宿主app的启动activity
-        hostAppLauncherActivity = "com.hjl.androidtcu.ui.activity.SplashActivity"
+        hostAppLauncherActivity = "com.qihoo360.replugin.sample.host.MainActivity"
     }
 }
